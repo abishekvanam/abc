@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_dt_translator_configuration">
+    <sn_dt_translator_configuration action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <default_provider>false</default_provider>
+        <detect_sub_flow display_value="Detect Language">b40f749b53e03300200bddeeff7b1242</detect_sub_flow>
+        <name>Microsoft</name>
+        <sys_class_name>sn_dt_translator_configuration</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-27 13:26:01</sys_created_on>
+        <sys_id>7ecc98c0b7603300d1ca8c28ee11a9e6</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Microsoft</sys_name>
+        <sys_package display_value="Dynamic Translation" source="sn_dt">7d7635917313230052317a5454f6a76b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dynamic Translation">7d7635917313230052317a5454f6a76b</sys_scope>
+        <sys_update_name>sn_dt_translator_configuration_7ecc98c0b7603300d1ca8c28ee11a9e6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-09 11:49:39</sys_updated_on>
+        <translate_sub_flow display_value="Translate Text To Multiple Languages">1ba9edbf53643300200bddeeff7b1282</translate_sub_flow>
+    </sn_dt_translator_configuration>
+</record_update>

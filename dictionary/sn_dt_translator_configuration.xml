@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="all_tables.synch_attachments=true,global_search_config_handler=TranslatorConfiguration,text_wiki_translations=true,update_synch=true" extends="sys_metadata" label="Translator Configuration" max_length="40" name="sn_dt_translator_configuration" text_index="true" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Default" max_length="40" name="default_provider" type="boolean"/>
+        <element attributes="encode_utf8=false" label="Detect Subflow" mandatory="true" max_length="32" name="detect_sub_flow" reference="sys_hub_flow" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Name" mandatory="true" max_length="40" name="name" type="string"/>
+        <element attributes="encode_utf8=false" label="Translate Subflow" mandatory="true" max_length="32" name="translate_sub_flow" reference="sys_hub_flow" type="reference"/>
+        <index name="index">
+            <element name="detect_sub_flow"/>
+        </index>
+        <index name="index2">
+            <element name="translate_sub_flow"/>
+        </index>
+    </element>
+</database>

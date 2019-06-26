@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_schema_attribute">
+    <sys_schema_attribute action="INSERT_OR_UPDATE">
+        <applies_to>COLUMN</applies_to>
+        <applies_to_description/>
+        <column_on_table/>
+        <column_type display_value="String (Full UTF-8)">5f96a603c3300200e5135ad8cbba8fe3</column_type>
+        <description>Setting this attribute to true will enable dynamic translation capability for the column on platform forms.</description>
+        <label>Dynamic Translation Enabled</label>
+        <name>dynamic_translation_enabled</name>
+        <on_table/>
+        <read_roles/>
+        <remove_roles/>
+        <sys_class_name>sys_schema_attribute</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-03-13 10:55:22</sys_created_on>
+        <sys_id>6964f75373403300634796f2c4f6a7a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Dynamic Translation Enabled</sys_name>
+        <sys_package display_value="Dynamic Translation" source="sn_dt">7d7635917313230052317a5454f6a76b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dynamic Translation">7d7635917313230052317a5454f6a76b</sys_scope>
+        <sys_update_name>sys_schema_attribute_6964f75373403300634796f2c4f6a7a3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-13 10:55:22</sys_updated_on>
+        <update_roles/>
+        <value_description/>
+        <value_type display_value="True/False">17d3ba81bf3320001875647fcf0739dc</value_type>
+    </sys_schema_attribute>
+</record_update>

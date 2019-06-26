@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="INSERT_OR_UPDATE">
+        <operation>execute</operation>
+        <source_scope display_value="Dynamic Translation">7d7635917313230052317a5454f6a76b</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2019-05-02 13:08:49</sys_created_on>
+        <sys_id>0872bd2b530133005c43ddeeff7b12da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ScopedGlideElement</sys_name>
+        <sys_package display_value="Dynamic Translation" source="sn_dt">7d7635917313230052317a5454f6a76b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Dynamic Translation">7d7635917313230052317a5454f6a76b</sys_scope>
+        <sys_update_name>sys_scope_privilege_0872bd2b530133005c43ddeeff7b12da</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2019-05-02 13:08:49</sys_updated_on>
+        <target_name>ScopedGlideElement</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>scriptable</target_type>
+    </sys_scope_privilege>
+</record_update>

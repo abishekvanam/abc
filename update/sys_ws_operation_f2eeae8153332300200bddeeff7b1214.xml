@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ws_operation">
+    <sys_ws_operation action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <consumes>application/json,application/xml,text/xml</consumes>
+        <consumes_customized>false</consumes_customized>
+        <default_operation_uri>/api/sn_dt/dynamic_translation/is_dynamic_translation_enabled</default_operation_uri>
+        <enforce_acl>cf9d01d3e73003009d6247e603f6a990</enforce_acl>
+        <http_method>GET</http_method>
+        <name>IsDynamicTranslationEnabled</name>
+        <operation_script><![CDATA[(function process(/*RESTAPIRequest*/ request, /*RESTAPIResponse*/ response) {
+
+    // implement resource here
+	var translator = request.queryParams.translator;
+	if(!translator)
+		var isEnabled = sn_dt_api.DynamicTranslation.isTranslationEnabled();
+	else 
+		var isEnabled = sn_dt_api.DynamicTranslation.isTranslationEnabled(translator[0]);
+	response.setStatus(200);
+	response.setBody({
+		'isDynamicTranslationEnabled': isEnabled
+	})
+	return response;
+
+})(request, response);]]></operation_script>
+        <operation_uri>/api/sn_dt/v1/dynamic_translation/is_dynamic_translation_enabled</operation_uri>
+        <produces>application/json,application/xml,text/xml</produces>
+        <produces_customized>false</produces_customized>
+        <relative_path>/is_dynamic_translation_enabled</relative_path>
+        <request_example/>
+        <requires_acl_authorization>true</requires_acl_authorization>
+        <requires_authentication>true</requires_authentication>
+        <requires_snc_internal_role>true</requires_snc_internal_role>
+        <short_description/>
+        <sys_class_name>sys_ws_operation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-02-21 19:51:36</sys_created_on>
+        <sys_id>f2eeae8153332300200bddeeff7b1214</sys_id>
+        <sys_mod_count>25</sys_mod_count>
+        <sys_name>IsDynamicTranslationEnabled</sys_name>
+        <sys_package display_value="Dynamic Translation" source="sn_dt">7d7635917313230052317a5454f6a76b</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Dynamic Translation">7d7635917313230052317a5454f6a76b</sys_scope>
+        <sys_update_name>sys_ws_operation_f2eeae8153332300200bddeeff7b1214</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-03-19 10:04:53</sys_updated_on>
+        <web_service_definition display_value="Dynamic Translation (Internal API)">fdcc97a453332300200bddeeff7b12d0</web_service_definition>
+        <web_service_version display_value="v1">50fc1ba453332300200bddeeff7b120c</web_service_version>
+    </sys_ws_operation>
+</record_update>
